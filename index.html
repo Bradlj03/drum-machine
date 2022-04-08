@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,12 @@
     <title>Metronome</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="metronome-counter">
+        <div class="title">Metronome Counter</div>
+        <div class="counter">0</div>
+    </div>
     <div class="tip">
         (Click anywhere to hear sound...)
     </div>
@@ -21,6 +27,40 @@
         <div class="arm"></div>
     </div>
 
+    <div class="set-tempo">
+        <input type="text" id="set-tempo-text">
+        <button id="set-tempo-button">Set Tempo</button>
+    </div>
+
+    <div class="drum-machine">
+        <div>
+            <input id="metronome-drum" type="checkbox" checked>
+            <label>metronome</label>
+        </div>
+
+        <div>
+            <input id="kick-drum" type="checkbox">
+            <label>kick drum</label>
+            <input id="kick-drum-timing" type="text">
+
+        </div>
+
+        <div>
+            <input id="snare-drum" type="checkbox">
+            <label>snare drum</label>
+            <input id="snare-drum-timing" type="text">
+
+        </div>
+
+        <div>
+            <input id="hi-hat" type="checkbox">
+            <label>hi hat</label>
+            <input id="hi-hat-timing" type="text">
+
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>
